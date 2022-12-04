@@ -3,7 +3,13 @@ body {
 	background-color: black;
 }
 
+#obervirus-image {
+/*	height: 60%;*/
+}
 
+#password-area {
+	height: 20%;
+}
 
 .btn-cool-blues {
     background: #2193b0;  /* fallback for old browsers */
@@ -11,4 +17,19 @@ body {
     background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*    color: #fff;*/
 	color:black;
+}
+
+.img-blur{
+  position: relative;
+  display: inline-block;
+}
+
+.img-blur:after {
+ 	content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	box-shadow: inset 0 0 40px 40px #000000;
 }
