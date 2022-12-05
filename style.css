@@ -3,12 +3,34 @@ body {
 	background-color: black;
 }
 
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #obervirus-image {
 /*	height: 60%;*/
 }
 
 #password-area {
 	height: 20%;
+}
+
+#worng-password-message {
+	color: darkred;
+	visibility: hidden;
+}
+
+.run-text-animation {
+  animation: fade 3s 3; 
 }
 
 .btn-cool-blues {
@@ -33,3 +55,4 @@ body {
 	  height: 100%;
 	box-shadow: inset 0 0 40px 40px #000000;
 }
+

@@ -14,10 +14,13 @@
 		</div>
 		</div>
 		<div id="password-area" class="form-group d-flex flex-column justify-content-center align-items-center">
-			<input type="text" class="form-control input-lg col-3 text-center" name="password_field"></input>
-			<button id="submit_password_button" class="btn btn-primary btn-cool-blues mt-1" type="submit">Senden</button>
+			<div id="worng-password-message" class="mt-1 mb-3 font-weight-bold lead">FALSCHES PASSWORT</div>
+			<input type="text" class="form-control input-lg col-3 text-center" name="password_field" id="password-field"></input>
+			<button id="submit_password_button" class="btn btn-primary btn-cool-blues mt-1" type="submit" onclick="evaluatePassword()">Senden</button>
 		</div>
 	</div>
+	<audio id="evil_laugh_sound" src="evil_laugh.mp3" preload="auto"></audio>
+  it</button>
 </body>
 <script src="main.js"></script>
 </html>
