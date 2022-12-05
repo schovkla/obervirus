@@ -1,14 +1,12 @@
 function evaluatePassword() {
-	  password = document.getElementById("password-field").value;
-	  console.log(password);
-	  if (password === "pass") {
-	  	console.log("correct password");
+	password = document.getElementById("password-field").value;
+	if (password === "pass") {
+		console.log("correct password");
 		document.getElementById("worng-password-message").style.visibility='hidden';
-	  } else {
-	  	// document.getElementById('evil_laugh_sound').play();
-	  	show_warning();
-
-	  }
+	} else {
+		// document.getElementById('evil_laugh_sound').play();
+		show_warning();
+	}
 }
 
 function show_warning() {
