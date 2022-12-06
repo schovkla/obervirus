@@ -18,30 +18,6 @@
 	justify-content: center;
 }
 
-.page-nav {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	font-family: var(--content-font);
-}
-
-.page-nav__item {
-	font-size: 10vh;
-}
-
-.page-nav__item--close {
-	font-size: 1.85em;
-	margin: 1em 0 0 0;
-	color: var(--body-text-alt);
-	position: relative;
-}
-
 .content__title {
 	font-size: 10vw;
 	margin: 0;
@@ -50,10 +26,6 @@
 	font-family: var(--content-font);
 	color: var(--body-text-alt);
 	position: relative;
-}
-
-.page-nav--open ~ .content__title {
-	pointer-events: none;
 }
 
 .content .pieces {

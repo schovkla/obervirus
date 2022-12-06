@@ -25,13 +25,9 @@ imagesLoaded(document.body, { background: true }, () => document.body.classList.
 			const piecesObj = new Pieces(piecesEl, {
 				 pieces: {rows: 20, columns: 15}
 			});
-			const menuEl = document.querySelector('.page-nav');
 			const optionsCtrl = document.querySelector('#password-area');
-			const closeOptionsCtrl = menuEl.querySelector('a.page-nav__item--close');
-
 
 			const showOptions = () => {
-				menuEl.classList.add('page-nav--open');
 				const breakupTime = 7000;
 
 				piecesObj.animate({
@@ -65,10 +61,6 @@ imagesLoaded(document.body, { background: true }, () => document.body.classList.
 				setTimeout(() => imageBlur.style.display='hidden', breakupTime);
 				setTimeout(() =>  document.querySelector('.content').style.display='none', breakupTime);
 				setTimeout(() =>  document.querySelector('#thank-you-area').style.display='block', breakupTime);
-				// document.querySelector('.content').style.display='none';
-				// document.querySelector('#thank-you-area').style.display='block';
-
-
 				
 				anime.remove(optionsCtrl);
 				anime({
@@ -78,61 +70,4 @@ imagesLoaded(document.body, { background: true }, () => document.body.classList.
 					scale: 1.2,
 					opacity: 0
 				});
-
-				anime.remove(menuEl);
-				anime({
-					targets: menuEl,
-					duration: 700,
-					delay: 150,
-					easing: 'easeOutExpo',
-					scale: [0,1],
-					opacity: 1
-				});
 			};
-
-			const hideOptions = (ev) => {
-				ev.preventDefault();
-				menuEl.classList.remove('page-nav--open');
-
-				piecesObj.animate({
-					duration: 600,
-					delay: (t,i) => {
-						const elBounds = piecesEl.getBoundingClientRect();
-						const x1 = elBounds.left + elBounds.width/2;
-						const y1 = elBounds.top + elBounds.height/2;
-						const x2 = t.dataset.centerx;
-						const y2 = t.dataset.centery;
-						const dist = Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
-						const maxDist = Math.sqrt(Math.pow(elBounds.left-x1,2) + Math.pow(elBounds.top-y1,2));
-						const maxDelay = 800;
-
-						return maxDelay/maxDist*dist;
-					},
-					easing: [0.1,1,0,1],
-					translateX: 0,
-					translateY: 0,
-					opacity: 1
-				});
-				
-				anime.remove(optionsCtrl);
-				anime({
-					targets: optionsCtrl,
-					duration: 700,
-					delay: 200,
-					easing: 'easeOutQuint',
-					scale: [1.1,1],
-					opacity: 1
-				});
-
-				anime.remove(menuEl);
-				anime({
-					targets: menuEl,
-					duration: 700,
-					easing: 'easeOutQuint',
-					scale: 0.8,
-					opacity: 0
-				});
- 				window.location.reload();
-			};
-
-			closeOptionsCtrl.addEventListener('click', hideOptions);
