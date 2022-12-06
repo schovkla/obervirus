@@ -10,3 +10,10 @@ spatne - zasmeje se
 Otázky: má se tam odpočítávat čas?
 
  Schädel Computervirus nebo Computervirus Bild
+
+
+TODO: 
+* rename functions such as hide menu items to reflect current state
+* delete boilerplate code
+* when obervirus disappear, show congratulations and final image
+* move back button
