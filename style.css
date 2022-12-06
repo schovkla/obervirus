@@ -20,6 +20,16 @@ body {
 	height: 20%;
 }
 
+#thank-you-area {
+	display: none;
+/*	position: absolute;*/
+	left: 50%;
+	top: 50%;
+/*	margin-left: calc(-1 * var(--pieces-height) * calc(4000/2869) / 2);
+	margin-top: calc(-1 * var(--pieces-height) / 2);*/
+	pointer-events: none;
+}
+
 #worng-password-message {
 	color: darkred;
 	visibility: hidden;

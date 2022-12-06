@@ -8,8 +8,8 @@
 }
 
 .content {
-	--pieces-height: 60vh;
-	height: 70vh;
+	--pieces-height: 70vh;
+	height: 75vh;
 	overflow: hidden;
 	position: relative;
 	display: flex;
