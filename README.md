@@ -1,1 +1,2 @@
-# obervirus
+# Obervirus
+Obervirus page shows an image of Obervirus. It allows users to destroy the Obervirus by typing the right password. If the password is wrong, Obervirus would laugh and show warning about the wrong pasword. If the password is correct, the Obervirus is destroyed and falls into pieces. Then an image with a thank you note and happy game characters is displayed.

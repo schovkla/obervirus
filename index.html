@@ -16,26 +16,25 @@
 		<div class="content">
 			<div class="pieces img-blur" style="background-image: url(obervirus.jpg)"></div>
 		</div>
-	</main>
-
-	<div class="container">
-		<div class="block mx-auto mt-5" id="thank-you-area">
-			<div class="d-flex" style="height: 80%;">
-				<div class="img-blur d-flex mx-auto" >
-					<img src="thank_you.jpg" id="thank-you-image"/>
+		<div class="container">
+			<div class="block mx-auto mt-5" id="thank-you-area">
+				<div class="d-flex" style="height: 80%;">
+					<div class="img-blur d-flex mx-auto" >
+						<img src="thank_you.jpg" id="thank-you-image"/>
+					</div>
 				</div>
 			</div>
+			<div id="password-area" class="form-group d-flex flex-column justify-content-center align-items-center">
+				<div id="worng-password-message" class="mt-1 mb-3 font-weight-bold lead">FALSCHES PASSWORT</div>
+				<input type="text" class="form-control input-lg col-3 text-center" name="password_field" id="password-field"></input>
+				<button id="submit-password-button" class="btn btn-primary btn-cool-blues mt-1" type="submit" onclick="evaluatePassword()">Senden</button>
+			</div>
 		</div>
-		<div id="password-area" class="form-group d-flex flex-column justify-content-center align-items-center">
-			<div id="worng-password-message" class="mt-1 mb-3 font-weight-bold lead">FALSCHES PASSWORT</div>
-			<input type="text" class="form-control input-lg col-3 text-center" name="password_field" id="password-field"></input>
-			<button id="submit_password_button" class="btn btn-primary btn-cool-blues mt-1" type="submit" onclick="evaluatePassword()">Senden</button>
-		</div>
-	</div>
-	<audio id="evil_laugh_sound" src="evil_laugh.mp3" preload="auto"></audio>
+		<audio id="evil_laugh_sound" src="evil_laugh.mp3" preload="auto"></audio>
+	</main>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/anime.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/pieces.js"></script>
 </body>
 <script src="main.js"></script>
 </html>
