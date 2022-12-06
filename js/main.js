@@ -1,6 +1,7 @@
 function evaluatePassword() {
 	if (document.getElementById("password-field").value === PASSWORD) {
 		document.getElementById("worng-password-message").style.visibility='hidden';
+		document.getElementById('glass_shatter_sound').play();
 		defeatObervirus();
 	} else {
 		document.getElementById('evil_laugh_sound').play();
@@ -59,12 +60,14 @@ const defeatObervirus = () => {
 	setTimeout(() => document.querySelector('.content').style.display='none', breakupTime);
 	setTimeout(() => document.querySelector('#thank-you-area').style.display='block', breakupTime);
 	
+	const passwordOutroDuration = 700;
 	anime.remove(passwordArea);
 	anime({
 		targets: passwordArea,
-		duration: 700,
+		duration: passwordOutroDuration,
 		easing: 'easeOutExpo',
 		scale: 1.2,
 		opacity: 0
 	});
+	setTimeout(() => passwordArea.style.cssText ='display:none !important', passwordOutroDuration);
 };
