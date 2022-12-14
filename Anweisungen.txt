@@ -1,0 +1,14 @@
+1) Starten:
+Klicken Sie zweimal auf die Datei index.html. Es sollte im Webbrowser geöffnet werden - z.B. in Chrome.
+
+2) Spiel neustarten:
+Drücken Sie die F5-Taste, um das Spiel neu zu starten. 
+
+3) Passwort ändern:
+Öffnen Sie die Datei index.html in einem Texteditor - klicken Sie mit der rechten Maustaste auf die Datei index.html und wählen Sie "öffnen in" und wählen Sie dann z.B. "Notizblock" oder einen anderen Texteditor.
+Suchen Sie die Zeile, in der "let PASSWORD = " steht.
+Schreiben Sie das neue Passwort in die Anführungszeichen.
+Nachdem Sie das Passwort geändert haben, müssen Sie das Spiel erneut starten oder neu starten.
+
+
+
