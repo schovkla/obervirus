@@ -59,6 +59,7 @@ const defeatObervirus = () => {
 	setTimeout(() => document.querySelector('.img-blur').style.display='hidden', breakupTime);
 	setTimeout(() => document.querySelector('.content').style.display='none', breakupTime);
 	setTimeout(() => document.querySelector('#thank-you-area').style.display='block', breakupTime);
+	setTimeout(() => document.getElementById('fanfare_sound').play(), breakupTime);;
 	
 	const passwordOutroDuration = 700;
 	anime.remove(passwordArea);
